@@ -11,6 +11,7 @@ public class EmployeeMapper {
 
     public EmployeeReadDto entityToDto(Employee employee) {
         return EmployeeReadDto.builder()
+                .id(employee.getId())
                 .firstName(employee.getFirstName())
                 .lastName(employee.getLastName())
                 .age(employee.getAge())
